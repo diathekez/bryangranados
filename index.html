@@ -350,7 +350,7 @@
 					<div class="chart" data-percent="55"><span><strong>Community Management</strong>55%</span></div>
 				</div>
 				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="75"><span><strong>Storytelling</strong>750%</span></div>
+					<div class="chart" data-percent="80"><span><strong>Adobe Suite</strong>80%</span></div>
 				</div>
 			</div>
 			<div class="row">
@@ -523,40 +523,37 @@
 		</div>
 		<div class="choose animate-box">
 			<h2>Contact</h2>
-			<form action="POST" data-netlify="true">
+			<form action="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field" action="/success/" name="bryan-granados-website">
+				<p class="hidden">
+					<label>
+					  This is not for humans: <input name="bot-field"/>
+					</label>
+				  </p>
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" name="fname" id="fname" class="form-control" placeholder="Name">
+						<input type="text" name="name" id="name" class="form-control" placeholder="Name">
 					</div>
 				</div>
-				<div class="row form-group">
-					<div class="col-md-6">
-						<input type="text" name="lname" id="lname" class="form-control" placeholder="Surname">
-					</div>
-				</div>
-
 				<div class="row form-group">
 					<div class="col-md-12">
 						<input type="email" name="email" id="email" class="form-control" placeholder="Email">
 					</div>
 				</div>
 
-				<div class="row form-group">
-					<div class="col-md-12">
-						<input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
-					</div>
-				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
 						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Speak; for thy servant heareth."></textarea>
 					</div>
 				</div>
-				<div class="row form-group col-md-12" data-netlify-recaptcha="true" required unchecked>
+				<div class="row form-group col-md-12" data-netlify-recaptcha="true">
+					<div class="field half">
+						<input type="checkbox" id="demo-human" name="demo-human" unchecked required>
+						<label for="demo-human">Definitely human</label>
+					</div>
 				</div>
 				<div class="form-group">
 					<input type="submit" value="Hurray!" class="btn btn-primary">
-					<input type="text" name="_honey" style="display:none">
 				</div>
 
 			</form>	
