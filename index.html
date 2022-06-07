@@ -523,7 +523,16 @@
 		</div>
 		<div class="choose animate-box">
 			<h2>Contact</h2>
-			<form name="contact" netlify>
+			<form name="contact"
+				method="POST"
+				data-netlify-recaptcha="true"
+				netlify-honeypot="bot-field"
+				data-netlify="true">
+				<p class="hidden">
+					<label>
+						Do not fill out unless you are a robot: <input name="bot-field" />
+					</label>
+				</p>
 				<div class="row form-group">
 					<div class="col-md-6">
 						<input type="text" id="fname" class="form-control" placeholder="Name">
