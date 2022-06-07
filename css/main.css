@@ -970,6 +970,7 @@ input, select, textarea {
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8em;
+		font-family: 'Space Mono', Arial;
 		font-weight: 500;
 		height: 3.5em;
 		letter-spacing: 0.25em;
