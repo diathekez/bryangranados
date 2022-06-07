@@ -523,34 +523,27 @@
 		</div>
 		<div class="choose animate-box">
 			<h2>Contact</h2>
-			<form action="POST"
-				netlify-honeypot="bot-field"
-				data-netlify="true">
-				<p class="hidden">
-					<label>
-						Do not fill out unless you are a robot: <input name="bot-field" />
-					</label>
-				</p>
+			<form action="POST" data-netlify="true">
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" id="fname" class="form-control" placeholder="Name">
+						<input type="text" name="fname" id="fname" class="form-control" placeholder="Name">
 					</div>
 				</div>
 				<div class="row form-group">
 					<div class="col-md-6">
-						<input type="text" id="lname" class="form-control" placeholder="Surname">
+						<input type="text" name="lname" id="lname" class="form-control" placeholder="Surname">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="email" id="email" class="form-control" placeholder="Email">
+						<input type="email" name="email" id="email" class="form-control" placeholder="Email">
 					</div>
 				</div>
 
 				<div class="row form-group">
 					<div class="col-md-12">
-						<input type="text" id="subject" class="form-control" placeholder="Subject">
+						<input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
 					</div>
 				</div>
 
@@ -559,7 +552,7 @@
 						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Speak; for thy servant heareth."></textarea>
 					</div>
 				</div>
-				<div class="row form-group col-md-12" data-netlify-recaptcha="true">
+				<div class="row form-group col-md-12" data-netlify-recaptcha="true" required unchecked>
 				</div>
 				<div class="form-group">
 					<input type="submit" value="Hurray!" class="btn btn-primary">
