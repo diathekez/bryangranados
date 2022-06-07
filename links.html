@@ -119,7 +119,11 @@
 									<p>Everything written is confidential.<br />
 										No information will be sold or disseminated pubicly in any way.</p>
 								</header>
-								<form name="contact" netlify>
+								<form name="contact"
+								method="POST"
+								data-netlify-recaptcha="true"
+								netlify-honeypot="bot-field"
+								data-netlify="true">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -132,10 +136,6 @@
 										<div class="field">
 											<label for="message">Message</label>
 											<textarea name="message" id="message" placeholder="Speak; for thy servant heareth." rows="5"></textarea>
-										</div>
-										<div class="field half">
-											<input type="checkbox" id="type" name="name" unchecked required>
-											<label for="type">Definitely human</label>
 										</div>
 									</div>
 									<ul class="actions">
