@@ -2,3 +2,4 @@
 /index.html        /
 /links.html		   /links
 /404.html          /404
+/success.html      /success
