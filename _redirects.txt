@@ -1,5 +1,5 @@
 # Redirects from what the browser requests to what we serve
 /index.html        /
-/links.html		   /links
+/info.html		   /info
 /404.html          /404
 /success.html      /success
